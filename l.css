@@ -1,0 +1,87 @@
+h1 {
+    font-size: 670%;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(228, 234, 235, 0.8), 0 0 20px rgba(222, 224, 224, 0.8);
+    animation: glow 1.5s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(247, 250, 248, 0.8), 0 0 30px rgba(219, 222, 224, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 30px rgb(28, 211, 177), 0 0 50px rgba(17, 91, 144, 0.8);
+    }
+  }
+
+  .card {
+    opacity: 0;
+    transform: translateY(20%);
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    100% {
+      opacity: 3;
+      transform: translateY(0.5);
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .snowflake {
+      font-size: 1.5rem;
+    }
+}
+h1
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #7935aa, #5341c9 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(94, 74, 113, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ad2424;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button:active,
+  button:hover {
+    outline: 0;
+  }
+  
+  button span {
+    background-color: rgb(39, 27, 36);
+    padding: 6px 2px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 90ms;
+  }
+  
+  button:hover span {
+   background-color: rgb(236, 237, 235)  ;
+  }
+  
+  button:active {
+    transform: scale(2);
+  }
+  
+  
